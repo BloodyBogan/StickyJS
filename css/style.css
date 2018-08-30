@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+
+* {
+   font-family: 'Montserrat', sans-serif;
+   margin: 0;
+   padding: 0;
+   outline: 0;
+   list-style-type: none;
+   text-decoration: none;
+   box-sizing: border-box;
+}
+
+body {
+   height: 100%;
+   width: 100%;
+   overflow-x: hidden;
+   background: white;
+}
+
+.navWrapper {
+   display: flex;
+   position: sticky;
+   top: 0;
+   z-index: 1;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   height: 4em;
+   width: 100vw;
+   background: whitesmoke;
+   -webkit-box-shadow: 0px -4px 30px 8px rgba(0,0,0,0.25);
+   -moz-box-shadow: 0px -4px 30px 8px rgba(0,0,0,0.25);
+   box-shadow: 0px -4px 30px 8px rgba(0,0,0,0.25);
+}
+
+.logo {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   margin-left: 30px;
+}
+
+.navWrapper .logo h1 {
+   margin-left: 5px;
+   font-size: 2em;
+   font-weight: 700;
+}
+
+.navWrapper .nav {
+ margin-right: 10px;
+}
+
+.navWrapper .nav a {
+   padding: 1.5em 20px;
+   color: black;
+   font-size: 1.1em;
+   font-weight: lighter;
+   transition: all 200ms ease;
+}
+
+.navWrapper .nav a:hover {
+   background: black;
+   color: whitesmoke;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: whitesmoke;
+   margin: 60px 15% 50px 15%;
+   border-radius: 3px;
+   -webkit-box-shadow: 4px 4px 28px -1px rgba(0,0,0,0.4);
+   -moz-box-shadow: 4px 4px 28px -1px rgba(0,0,0,0.4);
+   box-shadow: 4px 4px 28px -1px rgba(0,0,0,0.4);
+}
+
+form label {
+   font-size: 1.6em;
+   font-weight: bolder;
+   margin-top: 20px;
+   margin-bottom: 10px;
+}
+
+form label:nth-child(3) {
+   margin-top: 50px;
+}
+
+form input {
+   width: 80%;
+   height: 25px;
+   padding-left: 10px;
+   border: 1.5px solid black;
+   border-radius: 3px;
+   background: white;
+   font-weight: bolder;
+}
+
+form button {
+   margin: 20px 0 20px 0;
+   padding: 10px 20px;
+   background: black;
+   border: 2px solid black;
+   border-radius: 3px;
+   color: aquamarine;
+   font-size: 1em;
+   cursor: pointer;
+   transition: all 200ms ease;
+}
+
+form button:hover {
+   background: aquamarine;
+   color: black;
+}
+
+.note {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 60px 25% 50px 25%;
+   background: lightyellow;
+   border-radius: 3px;
+   -webkit-box-shadow: 4px 4px 28px -1px rgba(0,0,0,0.4);
+   -moz-box-shadow: 4px 4px 28px -1px rgba(0,0,0,0.4);
+   box-shadow: 4px 4px 28px -1px rgba(0,0,0,0.4);
+}
+
+.note a {
+   margin-top: 2%;
+   margin-left: 90%;
+   color: black;
+   cursor: pointer;
+   transition: all 200ms ease;
+}
+
+.note a:hover {
+   color: firebrick;
+}
+
+.note h1 {
+   text-align: center;
+   font-size: 2em;
+   font-weight: bolder;
+   margin: 15px 0 20px 0;
+   padding: 0 25px 5px 25px;
+   border-bottom: 2px solid black;
+}
+
+.note p {
+   text-align: center;
+   margin-bottom: 30px;
+   padding: 0 30px;
+   font-size: 1em;
+   font-weight: lighter;
+   overflow-x: hidden;
+   overflow-y: auto;
+   max-height: 50vh;
+}
+
+.note p::-webkit-scrollbar {
+    width: 12px;
+}
+
+.note p::-webkit-scrollbar-track {
+    box-shadow: inset 2px 2px 2px grey;
+    border-radius: 10px;
+}
+
+.note p::-webkit-scrollbar-thumb {
+    background: dimgrey;
+    border-radius: 10px;
+}
+
+.about {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 60px 15% 50px 15%;
+   background: whitesmoke;
+   border-radius: 3px;
+   -webkit-box-shadow: 4px 4px 28px -1px rgba(0,0,0,0.4);
+   -moz-box-shadow: 4px 4px 28px -1px rgba(0,0,0,0.4);
+   box-shadow: 4px 4px 28px -1px rgba(0,0,0,0.4);
+}
+
+.about h1 {
+   margin: 20px 0 10px 0;
+}
+
+.about p {
+   text-align: center;
+   margin: 0 40px 20px 40px;
+}
+
+footer {
+   display: flex;
+   align-items: baseline;
+   justify-content: center;
+}
+
+footer p {
+   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 532px) {
+
+   .navWrapper {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 6em;
+   }
+
+   .navWrapper .logo {
+      margin: 0;
+   }
+
+   .navWrapper .nav a {
+      padding: 5px 4px;
+   }
+
+   .note a {
+      margin-left: 80%;
+   }
+
+}

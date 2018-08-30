@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>StickyJS</title>
+   <link rel="shortcut icon" href="fav/fav.ico">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+<body onload="fetchNotes()">
+
+   <div class="navWrapper">
+      <div class="animated zoomInLeft logo">
+         <img src="img/logo.png" alt="Note Logo" width="40px" height="40px">
+         <h1>StickyJS</h1>
+      </div>
+      <div class="animated zoomInRight nav">
+         <a href="#form">Home</a>
+         <a href="#notesOutput">Notes</a>
+         <a href="#about">About</a>
+      </div>
+   </div>
+
+   <form class="animated bounceIn" id="form">
+      <label>Title</label><input type="text" id="noteTitle" placeholder="Enter Title...">
+      <label>Message</label><input type="text" id="noteMessage" placeholder="Enter Message...">
+      <button type="submit">Create</button>
+   </form>
+
+   <div id="notesOutput">
+
+   </div>
+
+   <div class="animated bounceIn about" id="about">
+      <h1>About</h1>
+      <p>Fairly simple, responsive, sticky note web application. Made using HTML, CSS and JavaScript. Used libraries: Animate.CSS and SmoothScroll.</p>
+   </div>
+
+   <footer>
+      <p class="animated fadeIn">&copy; 2018 | Michal K.</p>
+   </footer>
+
+
+   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+   <script src="js/main.js" charset="utf-8"></script>
+</body>
+</html>
