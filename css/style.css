@@ -208,7 +208,7 @@ footer p {
    margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 532px) {
+@media only screen and (max-width: 534px) {
 
    .navWrapper {
       flex-direction: column;
