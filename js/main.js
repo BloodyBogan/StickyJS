@@ -62,7 +62,7 @@ function fetchNotes() {
 
       notesOutput.innerHTML += '<div class="animated fadeIn note">'+
                                '<a onclick="deleteNote(\''+message+'\')" href="#">&#10006;</a>'+
-                               '<h1>' +title+
+                               '<h1>'+title+
                                '</h1>'+
                                '<p>'+message+
                                '</p>'+

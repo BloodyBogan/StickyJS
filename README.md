@@ -14,7 +14,7 @@ Smooth-Scroll: https://github.com/cferdinandi/smooth-scroll
 
 ## Version
 
-v1.0
+v1.1
 
 ## Author
 
