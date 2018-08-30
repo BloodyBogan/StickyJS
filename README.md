@@ -9,6 +9,7 @@ https://bloodybogan.github.io/StickyJS/
 ## Libraries
 
 Animate.CSS: https://github.com/daneden/animate.css
+
 Smooth-Scroll: https://github.com/cferdinandi/smooth-scroll
 
 ## Version

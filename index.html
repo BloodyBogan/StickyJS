@@ -11,6 +11,7 @@
 </head>
 <body onload="fetchNotes()">
 
+   <!-- Header Section -->
    <div class="navWrapper">
       <div class="animated zoomInLeft logo">
          <img src="img/logo.png" alt="Note Logo" width="40px" height="40px">
@@ -23,21 +24,25 @@
       </div>
    </div>
 
+   <!-- Form section -->
    <form class="animated bounceIn" id="form">
       <label>Title</label><input type="text" id="noteTitle" placeholder="Enter Title...">
       <label>Message</label><input type="text" id="noteMessage" placeholder="Enter Message...">
       <button type="submit">Create</button>
    </form>
 
+   <!-- This div is used to output the notes -->
    <div id="notesOutput">
 
    </div>
 
+   <!-- About Section -->
    <div class="animated bounceIn about" id="about">
       <h1>About</h1>
       <p>A simple, responsive, notes web application. Made using HTML, CSS and JavaScript. Used libraries: Animate.CSS and Smooth-Scroll.</p>
    </div>
 
+   <!-- Footer Section -->
    <footer>
       <p class="animated fadeIn">&copy; 2018 | Michal K.</p>
    </footer>

@@ -1,5 +1,7 @@
+// Grabbing the form and listening for submit
 document.getElementById('form').addEventListener('submit', saveNote);
 
+// Saves the notes, validates the input and pushing the info into local storage
 function saveNote(e) {
    var title = document.getElementById('noteTitle').value;
    var message = document.getElementById('noteMessage').value;
@@ -32,6 +34,7 @@ function saveNote(e) {
    e.preventDefault();
 }
 
+// Deletes the notes by comparing the message
 function deleteNote(message) {
    var notes = JSON.parse(localStorage.getItem('notes'));
 
@@ -46,6 +49,7 @@ function deleteNote(message) {
    fetchNotes();
 }
 
+// Grabs the notes from local storage and renders them
 function fetchNotes() {
    var notes = JSON.parse(localStorage.getItem('notes'));
 
@@ -66,6 +70,7 @@ function fetchNotes() {
    }
 }
 
+// Validates the form
 function validateForm(title, message) {
    if (!title || !message) {
       alert('Please fill in the form...');
@@ -75,6 +80,7 @@ function validateForm(title, message) {
    return true;
 }
 
+// Initializing the smooth scroll function
 var scroll = new SmoothScroll('a[href*="#"]',{
 		header: '.navWrapper'
 	});
